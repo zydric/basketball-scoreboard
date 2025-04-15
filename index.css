@@ -23,7 +23,7 @@ body {
     align-items: center;
     font-family: "CursedTimer", sans-serif;
     margin: 0;
-    background-image: url('https://img.freepik.com/premium-photo/empty-basketball-court-with-lights-spotlights-3d-rendering_768733-4911.jpg');
+    background-image: url('./images/basketball-court.jpg');
     background-size: cover;
     background-position: center;
     color: var(--text);
