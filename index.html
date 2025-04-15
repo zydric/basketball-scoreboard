@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="team-label">
+            <div class="team team-home">
+                <h3>HOME</h3>
+                <div class="score-count" id="home-score-count">
+                    0
+                </div>
+                
+                <div class="foul-count ">
+                    Fouls: <span id="home-foul-count"></span>
+                </div>
+                
+                 <div class="point-buttons">
+                    <button class="plus-one-btn" onclick="homeAddOnePoint()">+1</button>
+                    <button class="plus-two-btn" onclick="homeAddTwoPoints()">+2</button>
+                    <button class="plus-three-btn" onclick="homeAddThreePoints()">+3</button>
+                </div>
+                    <button class="foul-btn" onclick="homeAddFoul()">Foul</button>
+            </div>
+       
+            <div class="team team-guest">
+                <h3>GUEST</h3>
+                <div class="score-count " id="guest-score-count">
+                    0
+                </div>
+                
+                <div class="foul-count " >
+                    Fouls: <span id="guest-foul-count"></span>
+                </div>
+                
+                <div class="point-buttons">
+                    <button class="plus-one-btn" onclick="guestAddOnePoint()">+1</button>
+                    <button class="plus-two-btn" onclick="guestAddTwoPoints()">+2</button>
+                    <button class="plus-three-btn" onclick="guestAddThreePoints()">+3</button>
+                </div>
+                    <button class="foul-btn" onclick="guestAddFoul()">Foul</button>
+            </div>
+        </div>
+        
+        <button class="reset-btn" onclick="resetScores()">RESET SCORES</button>
+        <script src="index.js"></script>
+    </body>
+</html>

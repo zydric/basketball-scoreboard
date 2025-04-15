@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "CursedTimer";
+    src: url("./font/CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
+:root {
+    --background: #4B5563;
+    --text: #FFFFFF;
+    --timer-text: #F59E0B;
+    --timer-background: #111827;
+    --timer-border: 2px solid #D97706;
+    --button-border: 2px solid #1F2937;
+    --button-text-color: #9AABD8;
+    --reset-btn-color: #BE123C;
+    --reset-btn-text: #FFFFFF;
+    --shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "CursedTimer", sans-serif;
+    margin: 0;
+    background-image: url('https://img.freepik.com/premium-photo/empty-basketball-court-with-lights-spotlights-3d-rendering_768733-4911.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+}
+
+button {
+    font-family: "CursedTimer", sans-serif;
+    border-radius: 5px;
+    padding: 0.8rem;
+    border: none;
+}
+
+/* TEAM LABEL */
+
+.team-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.team-label h3 {
+    font-size: 2.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+/* STLYES FOR BOTH TEAMS */
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-count {
+    margin-top: -2rem;
+    width: 5.5rem;
+    text-align: center;
+    background-color: var(--timer-background);
+    padding: 1.5rem 2.5rem;
+    border: var(--timer-border);
+    border-radius: 0.278rem;
+    font-size: 5rem;
+    color: var(--timer-text);
+    box-shadow: var(--shadow);
+}
+
+.foul-count {
+    margin-top: 1rem;
+    text-align: start;
+    background-color: var(--timer-background);
+    padding: 1rem;
+    border: var(--timer-border);
+    border-radius: 0.278rem;
+    font-size: 1.5rem;
+    color: var(--timer-text);
+    box-shadow: var(--shadow);
+}
+
+/* POINT BUTTONS */ 
+
+.point-buttons {
+    margin: 2rem 0;
+}
+
+.point-buttons button {
+    color: var(--button-color);
+    border: var(--button-border);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
+.point-buttons .plus-one-btn {
+    background-color: #E11D48;
+}
+
+.point-buttons .plus-two-btn {
+    background-color: #0284C7;
+}
+
+.point-buttons .plus-three-btn {
+    background-color: #059669;
+}
+
+.foul-btn {
+    width: 10.5rem;
+    border: 2px solid #B45309;
+    background-color: #D97706;
+    color: var(--button-color);
+    box-shadow: var(--shadow);
+}
+
+/* RESET BUTTON */
+
+.reset-btn {
+    margin: 2rem;
+    background-color: var(--reset-btn-color);
+    color: var(--text);
+    width: 29.2rem;
+    border: 2px solid #881337;
+    box-shadow: var(--shadow);
+}
